@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-family: 'fira code';
+}
+
+.heading-container h1{
+    font-size: 1.2em;
+    color: #303960;
+    /* line-height: ; */
+    /* word-spacing:; */
+    text-decoration: underline;
+}
+
+.container{
+    display: inline-block;
+    margin: auto;
+    width:48%;
+    height: auto;
+    /* border: 2px solid red; */
+    border-right: 2px solid gray;
+    padding-right: 3%;
+}
+
+h1{
+    text-align: center;
+    color: #303960;
+    font-size: 2rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    flex-direction: column;
+}
+li{
+    margin: 5px;
+    font-size: 15px;
+    
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8b24f;
+}
+
+.c-name{
+    flex-grow: 1;
+    width: 50%;
+    margin: 10px;
+    font-size: 20px;
+    color: #303960;
+}
+
+.c-number{
+    flex-grow: 1;
+    width: 25%;
+    margin: 10px;
+    color: #303960;
+}
+
+.delete{
+    flex-grow: 0.5;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    color: red;
+}
+
+.details:hover{
+    background-color: #303960;
+    transition: all 0.5s;
+}
+
+.details:hover p{
+    color: #f8b24f;
+}
+
+.delete:hover .delete{
+    color:red ;
+}
+
+
+.form-container{
+    width: 40%;
+    display: inline-block;
+    position: relative;
+    /* margin-left: 5%; */
+}
+
+.contact-form {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start ; */
+    flex-direction: column;
+}
+
+.contact-form input{
+    margin:1rem 1rem 2rem 1rem;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    border-top: none;
+    border-left:none;
+    border-right: none;
+    border-bottom: 2px solid black;
+    font-size: 1rem;
+    font-family: 'fira code';
+}
+
+input:focus{
+    outline: none;
+}
+
+.btn{
+    border: 2px solid #f8b24f;
+    font-size: 20px;
+    height: 2.5rem;
+    width: 40%;
+    margin-left: 15px;
+    font-size: 1rem;
+    text-align: center;
+    color: #f8b24f;
+    background-color: #303960;
+    border-radius: 5px;
+    outline: none;
+}

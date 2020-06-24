@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>PlayGround</h1>
+
+    <!-- Rendering list in ejs using for loop -->
+    <ul>
+        <% for(let i =1 ; i <= 10;++i){ %>
+            <li>
+                <%= i %>  
+            </li>
+         <% } %> 
+    </ul>
+
+    <!-- conditional statements -->
+
+    <% if(false) { %> 
+        <h1>It's True</h1>
+    <% } else { %> 
+        <p>It's False :/</p>
+    <% } %> 
+</body>
+</html>

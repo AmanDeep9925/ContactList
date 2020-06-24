@@ -1,0 +1,1 @@
+console.log("Greeting form main js")

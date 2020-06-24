@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <script src="https://kit.fontawesome.com/d46ed99af6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="heading-container">
+        <h1>Contact List</h1>
+    </div>
+    
+    <!-- Rendering the contactlist -->
+    <div class="container">
+        <ul>
+            <% contact_List.forEach(contact => { %>
+                <li>
+                    <div class="details">
+                        <p class="c-name"><%= contact.name%></p>
+                        <p class="c-number"><%= contact.phone %></p>
+                        <a href="/delete-contact/?id=<%= contact._id %>"  class="delete"> <i class="fas fa-trash "></i></a>
+                    </div>
+                </li>
+            <% }); %>  
+        </ul>
+    </div>
+
+    <!-- To ad<d the contact in contact list -->
+    <div class="form-container">
+        <form action="/create-contact" method="post" class="contact-form">
+            <input type="text" name="name" id="#name" placeholder="Enter Name" required>
+            <input type="text" name="phone" id="#phoneno" placeholder="Enter Phone Number" required >
+            <button type="submit" class="btn">Add Contact</button>
+        </form>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
